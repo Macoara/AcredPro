@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+body {
+    background-color: #ffffff;
+    min-width: 20px;
+}
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 10px 10%;
+}
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+}
+#nombre_esa {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+.header .nav-links {
+    list-style: none;
+}
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover,
+/**/ .overlay a:hover {
+    transform: scale(1.1);
+}
+.header .nav-links a {
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.header .nav-links li a:hover {
+    color: #2147e0;
+}
+.menu {
+    display: none;
+}
+.header .btn button,
+.header .menu button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 9px 25px;
+    background: #2147e0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .btn button:hover,
+.header .menu button:hover {
+    background-color: #21bde0;
+    color: #1b3039;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+/*Nav mobile*/
+.header a {
+    text-decoration: none;
+    /*borramos el que teniamos en .header .nav-links a*/
+}
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #21bde0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #1b3039;
+}
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: #2147e0;
+}
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+@media screen and (max-height:450px) {
+    .header .overlay a {
+        font-size:  20px;
+    }
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #f7f9f9;
+}
+.imagen img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    box-shadow: #000000;
+}
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+    font-size: 8px;
+}
+.button-1 {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+.star {
+    background-color: #2147e0;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.Watch {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #000000;
+    opacity: 0.4;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 70px;
+}
+.card-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    justify-content: space-between;
+}
+#card-container-2 {
+    font-weight: 800;
+    opacity: 0.9;
+}
+.card-title {
+    font-weight: 800;
+    opacity: 0.9;
+}
+.card-text {
+    opacity: 0.4;
+}
+.number {
+    display: flex;
+    gap: 30px 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc (25% - 20px);
+    min-width: 200px;
+    flex-direction: row;
+}
+.icon-1 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-3 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.img-text {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 20px;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+}
+.lista {
+    padding-left: 90px;
+}
+.img-1 { 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 20px;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 100px;
+    width: 100px;
+    height: auto;
+
+}
+.card-comentarios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 300px;
+    box-shadow: #000000;
+    justify-content: center;
+    
+}
+.card-1 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-2 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-3 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+}
+.card-price {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 300px;
+    box-shadow: #000000;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#card  {
+    background-color: #2147e0;
+    color: #ffffff;
+}
+.button {
+    display: flex;
+    justify-content: left;
+    background-color: #3b6fe1;
+    border-color: #3b6fe1;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 3px;
+    margin: 3px;
+}
+.text-footer {
+    display: flex;
+    padding-left: 5px;
+    padding-top: 35px;
+}
+.footer-container {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footer-1 {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    align-self: center;
+    text-align: left;
+}
+#imagen-2 {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h4 {
+    display: flex;
+    margin-left: auto;
+}
+@media (max-width: 768px) {
+    .contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer-container > div {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container ul {
+    width: auto !important;
+    margin: 0 auto;
+    }
+}
+.header .logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    max-width: 100%;
+    overflow: visible; /* Evita que la imagen sea cortada */
+}
+#nombre_esa {
+    padding: 0;
+    margin: 0;
+    font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
+    line-height: 1.2; /* Ajusta la altura de línea para mejor alineación */
+}
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    /* Asegurar que el logo y el texto se vean correctamente */
+    .header .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Espacio entre el logo y el texto */
+    }
+
+    .header .logo img {
+        max-height: 50px;
+        width: auto;
+    }
+
+    #nombre_esa {
+        font-size: 18px; /* Ajuste de tamaño en móvil */
+        white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    }
+
+    /* Mostrar los nav-links de manera responsiva */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    /* Mostrar el menú cuando se active */
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Asegurar que los botones sean visibles */
+    .btn,
+    .menu {
+        display: block;
+    }
+
+    .menu button {
+        background: #2147e0;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+/* Existing CSS code... */
+
+@media screen and (max-width: 768px) {
+    .btn {
+        display: none !important;
+    }
+    /*Mostrar el botón de "Menú"*/
+    .menu {
+        display: block !important;
+    }
+    /*Asegurar que el menú de navegación esté oculto inicialmente*/
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+    /*Mostrar el Menú cuando se active*/
+    .nav-links.active {
+        display: flex;
+    }
+}
+.Star {
+    background-color: #ffffff;
+
+}
+
+/* Existing CSS code... */
+    
+

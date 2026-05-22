@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion2</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/shield_77956.png" alt="Logo de la APP" class="img-fluid">
+            <h2 id="nombre_esa">AccredPro</h2>
+        </div>
+        <nav>        
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Benefit</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="#"><button>Get Started</button></a>
+        <a onclick="openNav()" class="menu"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Features</a>
+                <a href="#">How It Works</a>
+                <a href="#">Benefit</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>  
+    <div class="contenedor">
+        <div class="texto">
+            <h1 class="titulo">Streamline Your Contractor 
+            <br> Accreditation Process</h1>
+            <h5>Get your company accredited faster and easier with our digital latform.
+                <br> Save time, reduce parework, and stay compliant
+            </h5>
+        </div>
+        <div class="imagen">
+            <img src="img/Persona-usando-laptop.jpg" alt="">
+        </div>
+    </div>
+    <div class="button-1">
+        <button class="star">Star Free Trial</button>
+        <button class="Watch">Watch Demo</button>
+    </div>
+    <div class="container">
+        <h2>Powerful Feature for Your Business</h2>
+    </div>
+    <section class="card-container">
+        <div id="card-container-2" class="card border-secondary mb-4" style="max-width: 18rem;">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-check-fill" viewBox="0 0 16 16">
+                    <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+                    <path d="M4.085 1H3.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1h-.585q.084.236.085.5V2a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 2v-.5q.001-.264.085-.5m6.769 6.854-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                  </svg>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Digital Documentation</h5>
+                <p class="card-text">Covert all your paper documents into secure digital formats</p>
+            </div>
+        </div>
+        <div id="card-container-2" class="card border-secondary mb-4" style="max-width: 18rem;">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+                <div class="card-body">
+                    <h5 class="card-title">Real.time Tracking</h5>
+                    <p class="card-text">Monitor your accreditation progress in real-time</p>
+                </div>
+            </div>
+            <div id="card-container-2" class="card border-secondary mb-4" style="max-width: 18rem;">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/>
+                    </svg>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Compliance Monitoring</h5>
+                    <p class="card-text">Stay compliant with automatic updates and reminders.</p>
+            </div>
+            </div>
+            <div id="card-container-2" class="card border-secondary mb-4" style="max-width: 18rem;">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                </svg>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto Renewals</h5>
+              <p class="card-text">Never miss a deadline with automated renewal processes.</p>
+            </div>
+          </div>
+    </section>
+    <article>
+        <h2>Simple 3-Step Process</h2>
+        <div class="number">
+            <div class="icon-1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h5 id="subtitulo">Register Company</h5>
+                    <p>Quick and easy registration process</p>
+                </div>
+            </div>
+            <div class="icon-2">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clipboard2-check-fill" viewBox="0 0 16 16">
+                        <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+                        <path d="M4.085 1H3.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1h-.585q.084.236.085.5V2a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 2v-.5q.001-.264.085-.5m6.769 6.854-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                    </svg>
+                </div>
+                <div>
+                    <h5 id="subtitulo">Upload Documents</h5>
+                    <p>Secure document upload and verification</p>
+                </div>
+            </div>
+            <div class="icon-3">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <img src="img/user_shield_icon_198632.png" width="40" height="32" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                </div>
+                <div>
+                    <h5 id="subtitulo">Get Accredited</h5>
+                    <p>Receive your official accreditation</p>
+                </div>
+            </div>
+        </div>
+        <section class="img-text">
+            <img class="img-1" src="img/mujer-profesional-de-confianza-sentada-en-el-escritorio-y-rodeada-computadoras-mientras-trabaja-la-oficina-negocios-que-usa-está-273978231.webp" alt="">
+        <div>
+                <h2>Why Choose AccredPro?</h2>
+            <ul class="lista">
+                <li> Reduce paperwork by 90%</li>
+                <li> Save 20+ hours per application</li>
+                <li> Real-time status updates</li>
+                <li> Automated compliance checks</li>
+                <li> Secure document storage</li>
+            </ul>
+        </div>
+        </section>
+        <div>
+            <h2>Trusted by Leading Contractors</h2>
+        </div>
+        <article class="card-comentarios">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">John Smith</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">CEO, Smith Construction</h6>
+                    <p class="card-text">"AccredPro has transformed how we handle our acreditation process. It's incredibly efficient".</p>
+                    <footer class="Star">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                    </footer>    
+                </div>
+            </div>
+            <div class="card-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sarah Johnson</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Operation Maneger, Johnson & Co</h6>
+                    <p class="card-text">"The automated compliance check have saved us countless hours and prevented many headaches".</p>
+                    <footer class="Star">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                    </footer>    
+                </div>
+            </div>
+            <div class="card-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Brown</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Director, Brown Builders</h6>
+                    <p class="card-text">"Best investment we've made for our compliance management. Highly recommended¡".</p>
+                    <footer class="Star">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <img src="img/Star_96x96-32_37882.png" width="30" height="30" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                    </footer>    
+                </div>
+            </div>
+        </article>
+        <div class="title">
+            <h1>Choose  Your PLan</h1>
+        </div>
+        <article class="card-price">
+            <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Basic</h5>
+                    <p class="card-text">
+                        <h3>$99/month</h3>
+                        <ul>
+                            <li>Up to 5 users</li>
+                            <li>Basic document management</li>
+                            <li>Email suport</li>
+                            <li>Standard reporting</li>
+                        </ul>
+                    </p>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 1" id="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Professional</h5>
+                    <p class="card-text">
+                        <h3>$199/month</h3>
+                        <ul>
+                            <li>Up to 20 users</li>
+                            <li>Advanced document management</li>
+                            <li>Priority reporting</li>
+                            <li>Advanced reporting</li>
+                            <li>Custom workflows</li>
+                            <li>API access</li>
+                        </ul>
+                    </p>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-light text-primary">Get Started</a>
+                    </div>                </div>
+            </div>
+            <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Enterprise</h5>
+                    <p class="card-text">
+                        <h3>Custom</h3>
+                        <ul>
+                            <li>Unlimited users</li>
+                            <li>Enterprise document management</li>
+                            <li>24/7 dedicated suport</li>
+                            <li>Custom reporting</li>
+                            <li>Custom workflows</li>
+                            <li>API access</li>
+                            <li>Custom intergrations</li>
+                        </ul>
+                    </p>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                    </div>
+            </div>
+        </article>
+        <footer class="footer-container">
+            <div class="grid gap-0 row-gap-3">
+                <img id="imagen-2" class="p-2 g-col-6" src="img/shield_77956_.png" alt="">
+                <h4 class="p-2 g-col-6">AccredPro</h4>
+                <p class="p-2 g-col-6">Making contractor accreditation simple, fast, 
+                <br> and reliable. </p>
+            </div>
+            <div>                
+                <ul class="ul" style="width: 18rem;">
+                    <h4>Product</h4>
+                    <li class="list-group-item">Features</li>
+                    <li class="list-group-item">Pricing</li>
+                    <li class="list-group-item">Integrations</li>
+                    <li class="list-group-item">Updates</li>
+                </ul>
+            </div>
+            <div>                
+                <ul class="ul" style="width: 18rem;">
+                    <h4>Company</h4>
+                    <li class="list-group-item">About</li>
+                    <li class="list-group-item">Careers</li>
+                    <li class="list-group-item">Blog</li>
+                    <li class="list-group-item">Press</li>
+                </ul>
+            </div>
+            <div>                
+                <ul class="ul" style="width: 18rem;">
+                    <h4>Resourdes</h4>
+                    <li class="list-group-item">Documentation</li>
+                    <li class="list-group-item">Support</li>
+                    <li class="list-group-item">API</li>
+                    <li class="list-group-item">Contact</li>
+                </ul>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="nav.js"></script>
+</body>
+</html>
